@@ -342,7 +342,7 @@ function korignsdja_scripts() {
 
 	// Enqueue the navigation script.
 	wp_enqueue_script( 'korignsdja-navigation', get_theme_file_uri( '/js/navigation.js' ), array(), '20180514', false );
-	wp_script_add_data( 'korignsdja-navigation', 'async', true );
+	wp_script_add_data( 'korignsdja-navigation', 'defer', true );
 	wp_localize_script( 'korignsdja-navigation', 'korignsdjaScreenReaderText', array(
 		'expand'   => __( 'Expand child menu', 'korignsdja' ),
 		'collapse' => __( 'Collapse child menu', 'korignsdja' ),
